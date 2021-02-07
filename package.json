@@ -1,7 +1,7 @@
 {
-  "name": "nombre",
+  "name": "charepo",
   "version": "1.0.0",
   "bin": {
-    "nombre": "index.js"
+    "charepo": "index.js"
   }
 }
