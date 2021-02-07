@@ -1,6 +1,11 @@
 #!/usr/bin/env node
+
+const clearConsole = require('clear-any-console');
+
+clearConsole();
+
 console.log(`Felipe Guerrero - 
 
-Ingeniero en sistemas
+Los mamotretos de los mamotretos
 
 Egresado de cierto lugar.`);
