@@ -19,7 +19,7 @@ welcome({
   clear: true,
 });
 
-log(`${chalk.bgRed.bold(` Felipe Guerrero `)} - 
+log(`${chalk.bgRed.bold(` Felipe `)} - 
 
 ${italic(`Los mamotretos de los mamotretos`)}
 
