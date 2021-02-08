@@ -1,8 +1,18 @@
 #!/usr/bin/env node
 
-const clearConsole = require('clear-any-console');
+const pkgJSON = require('./package.json');
+const welcome = require('cli-welcome');
 
-clearConsole();
+welcome({
+  title: pkgJSON.name,
+  tagLine: `Bienvenidos al Himalaya`,
+  description: pkgJSON.description,
+  version: pkgJSON.version,
+  bgColor: `#fadc00`,
+  color: `#000000`,
+  bold: true,
+  clear: true,
+});
 
 console.log(`Felipe Guerrero - 
 
