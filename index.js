@@ -29,14 +29,14 @@ ${twitter}${twitterurl}
 `);
 
 console.clear();
-const error = chalk.bold.red;
-const warning = chalk.keyword('orange');
-const success = chalk.green;
-const info = chalk.blue;
+const error = chalk.bold.red.inverse;
+const warning = chalk.keyword('orange').bold.inverse;
+const success = chalk.green.bold.inverse;
+const info = chalk.blue.bold.inverse;
 
-log();
-log(error('Error!'));
-log(warning('Warning!'));
-log(success('Success!'));
-log(info('Info:'));
-log();
+log(`
+${success(` Sucess! `)} Mensaje de éxito.
+${info(` Info `)} Mensaje de info.
+${warning(` Warning `)} Mensaje de advertencia.
+${error(` Error `)} Mensaje de Error.
+`);
