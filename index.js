@@ -33,10 +33,14 @@ const error = chalk.bold.red.inverse;
 const warning = chalk.keyword('orange').bold.inverse;
 const success = chalk.green.bold.inverse;
 const info = chalk.blue.bold.inverse;
+const sym = require('log-symbols');
 
 log(`
-${success(` Sucess! `)} Mensaje de éxito.
-${info(` Info `)} Mensaje de info.
-${warning(` Warning `)} Mensaje de advertencia.
-${error(` Error `)} Mensaje de Error.
+${sym.success} ${success(` Sucess! `)} Mensaje de éxito.
+
+${sym.info} ${info(` Info `)} Mensaje de info.
+
+${sym.warning} ${warning(` Warning `)} Mensaje de advertencia.
+
+${sym.error} ${error(` Error `)} Mensaje de Error.
 `);
