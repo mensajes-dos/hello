@@ -1,6 +1,6 @@
-# `npx nombre`
+# `npx charepo`
 
-> Get to know Felipe using your command line with Node.js
+> Get to know charepo using your command line with Node.js
 
 ## Usage
 
