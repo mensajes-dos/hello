@@ -2,6 +2,11 @@
 
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
+const chalk = require('chalk');
+const log = console.log;
+const italic = chalk.italic
+const twitter = chalk.hex(`#1da1f2`).bold.inverse(' Twitter ');
+const twitterurl = chalk.dim(' https://twitter.com/guerretmx');
 
 welcome({
   title: pkgJSON.name,
@@ -14,8 +19,24 @@ welcome({
   clear: true,
 });
 
-console.log(`Felipe Guerrero - 
+log(`${chalk.bgRed.bold(` Felipe Guerrero `)} - 
 
-Los mamotretos de los mamotretos
+${italic(`Los mamotretos de los mamotretos`)}
 
-Egresado de cierto lugar.`);
+Egresado de cierto lugar.
+
+${twitter}${twitterurl}
+`);
+
+console.clear();
+const error = chalk.bold.red;
+const warning = chalk.keyword('orange');
+const success = chalk.green;
+const info = chalk.blue;
+
+log();
+log(error('Error!'));
+log(warning('Warning!'));
+log(success('Success!'));
+log(info('Info:'));
+log();
