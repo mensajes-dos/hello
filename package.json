@@ -12,5 +12,13 @@
     "nombre",
     "Bienvenida",
     "felipe"
-  ]
+  ],
+  "licence": "MIT",
+  "main": "index.js",
+  "repository": "mensajes-dos/hello",
+  "author": {
+    "name": "Felipe",
+    "email": "mensajes.dos@gmail.com",
+    "url": "https://twitter.com/mensajes-dos"
+  }
 }
